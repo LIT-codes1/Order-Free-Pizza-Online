@@ -1,0 +1,610 @@
+body{
+    background-image: url('png.jpg');
+    /* background-size: cover */
+}
+@import url('https://fonts.googleapis.com/css2?family=Vogue&display=swap');
+#litPizzaHeading {
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    background-color: rgba(231, 129, 89, 0.932);
+    color: white;
+    width: auto;
+    border: 3px solid black;
+   border-radius: 4px;
+   display: inline-block;
+   margin-left: 20px;
+
+}
+#logIn {
+    display: inline-block;
+    margin-left:50%;
+    font-size: 10px;
+    font-weight: 900;
+}
+#logIn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#logInFont {
+    display: inline-block;
+    font-size: 18px;
+
+}
+.orderFeatures{
+   display: inline-block;
+   margin-left: 20px;
+   background-color: black;
+   color: white;
+   padding: 10px;
+   font-size: 13px;
+   border-radius: 5px;
+   font-family: 'Cinzel', serif;
+   
+   
+}
+
+@media screen and (max-width:1330px) {
+    #logIn {
+        margin-left: 57%;
+    }
+}
+@media screen and (max-width:1300px) {
+#logIn {
+    margin-left: 57%;
+}
+  }
+
+  @media screen and (max-width:1240px) {
+    #logIn {
+           margin-left: 55%;
+       }
+         }
+
+  @media screen and (max-width:1200px) {
+ #logIn {
+        margin-left: 53%;
+    }
+      }
+
+      @media screen and (max-width:1150px) {
+        #logIn {
+           margin-left: 50%;
+               }
+           }
+
+      @media screen and (max-width:1100px) {
+ #logIn {
+    margin-left: 49%;
+        }
+    }
+    
+    @media screen and (max-width:1080px) {
+        #logIn {
+          margin-left: 45%;
+                  }
+          }
+
+  @media screen and (max-width:1000px) {
+  #logIn {
+    margin-left: 43%;
+            }
+    }
+@media screen and (max-width:980px) {
+ #logIn {
+    margin-left: 40%;
+        }
+    }
+@media screen and (max-width:900px) {
+ #logIn {
+     margin-left: 40%;
+       }
+ .orderFeatures {
+    font-size: 12px;
+        }
+    }
+@media screen and (max-width:855px) {
+ #logIn {
+     margin-left: 36%;
+    }
+ .orderFeatures {
+    font-size: 12px;
+        }
+    }
+@media screen and (max-width:850px) {
+ #logIn {
+    margin-left: 32%;
+        }
+ .orderFeatures {
+     font-size: 12px;
+        }
+    }
+ @media screen and (max-width:845px) {
+ #logIn {
+            margin-left: 20%;
+         }
+ .orderFeatures {
+             font-size: 12px;
+        }
+    }
+    #lining {
+        width: 100%;
+        background-color: rgb(224, 213, 213);
+        height: 2px;
+        margin-top: 8px;
+    }
+    #imageForPizza {
+        width: 100%;
+        margin-top: 20px;
+        height: 550px;
+        object-fit: cover;
+    }
+    #image1Container {
+        position: relative;
+    }
+    .addToImageContainer {
+        animation: fadeOutAnimation ease 3s;
+        visibility: hidden;
+    }
+    @keyframes fadeOutAnimation {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      
+    #image1Container h1 {
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        color: antiquewhite;
+    }
+    #image1Container p {
+        position: absolute;
+        font-size: 13px;
+        top: 53%;
+        left: 4%;
+        color: antiquewhite;
+   font-family: 'Montserrat', sans-serif;
+    }
+    #image1Container button {
+        position: absolute;
+        top: 67%;
+        left: 4%;
+        color: white;
+        background-color: black;
+        font-size: 15px;
+        padding: 10px;
+    }
+    #loginDetails1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background:rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    }
+    #cancelLogin {
+        position: absolute;
+        top: 10px;
+        left: 92%;
+        cursor: pointer;
+    }
+    #loginDetails1 h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+    }
+    #loginDetails1 .user-box {
+        position: relative;
+    }
+    #loginDetails1 .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+    }
+    #loginDetails1 .user-box label{
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      pointer-events: none;
+      transition: .5s;
+    }
+    #loginDetails1 .user-box input:focus ~ label,
+    #loginDetails1 .user-box input:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+#loginDetails1 form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition:.5s ;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+#loginDetails1 a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+#loginDetails1 a span {
+    position: absolute;
+    display: block;
+}
+#loginDetails1 a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+#loginDetails1 a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay:.25s 
+}
+@keyframes btn-anim2 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+#loginDetails1 a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#03e9f4 );
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+#loginDetails1 a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s 
+}
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+#pizza {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 40px;
+    text-decoration: underline;
+    color: rgb(231, 229, 227);
+}
+#orderingSector {
+    position: relative;
+    width: 280px;
+    height: 358px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+}
+#orderingSector img {
+    position: absolute;
+    top:10%;
+    left: 5%;
+    width: 90%;
+    height: 150px;
+
+}
+#Pepperoni {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+
+}
+#pepperoniText {
+    position: absolute;
+    top:63%;
+    left: 34%;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+#orderingSector #pepperoniOrderNow {
+    position: absolute;
+    top:86%;
+   width: 100%;
+   background-color: rgb(230, 153, 67);
+   font-size: 12px;
+   cursor: pointer;
+   border-radius: 0 0 10px 10px;
+}
+#orderNow2 {
+margin-left: 30%;
+}
+#pepperoniPrize {
+    position: absolute;
+    top: 70%;
+    left:41%;
+    /* font-size: 12px; */
+
+}
+    #margaText {
+        position: absolute;
+        top:63%;
+        left: 44%;
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    #margaPrize {
+        position: absolute;
+        top: 70%;
+        left:43%;
+        /* font-size: 12px; */
+    
+    }
+    #capriText {
+        position: absolute;
+        top:63%;
+        left: 30%;
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    #capriPrize {
+        position: absolute;
+        top: 70%;
+        left:43%;
+        /* font-size: 12px; */
+    
+    }
+
+
+
+#salesBoard {
+    float: right;
+    width: 280px;
+    height: auto;
+    margin-top: -40px;
+    background-color: white;
+    border-radius: 10px;
+}
+#salesBoard p {
+    margin-left: 15px;
+    font-size: 20px;
+    /* margin-top: 20px; */
+}
+#settingOfOrder {
+    margin-left: 150px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#cart {
+    /* margin-top: 6px; */
+    margin-left: 70px;
+    font-size: 120px;
+}
+ #salesBoard #emptyCart {
+     font-size: 12px;
+     margin-left: 78px;
+     /* margin-top: -30px; */
+     color: #d0d1d2;
+}
+#salesBoard #minOrder {
+    font-size: 15px;
+}
+
+
+#salesBoard #delivery {
+    font-size: 15px;
+    color:rgb(230, 153, 67) ;
+}
+#free {
+    color: black;
+    margin-left:47px ;
+}
+#createOrder {
+    background: rgb(230, 153, 67);
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: -20px;
+    cursor: pointer;
+    /* margin-top: 5px; */
+}
+#createOrder2 {
+    padding: 9px;
+}
+#italian {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+}
+#italianText {
+    position: absolute;
+    top:63%;
+    left: 38%;
+    font-size: 12px;
+    opacity: 0.5;
+}
+#italianPrize {
+    position: absolute;
+    top: 70%;
+    left:41%;
+    /* font-size: 12px; */
+}
+#vegText {
+    position: absolute;
+    top:63%;
+    left: 35%;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+
+#bar { 
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+
+#orderPizza {
+    animation: fadeInAnimation ease 5s;
+    visibility: visible;
+}
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+#back {
+    margin-left: 10px;
+    margin-top:10px ;
+    color: rgb(230, 153, 67);
+    cursor: pointer;
+}
+#address {
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    margin-top: 0;
+}
+.salesBox input{
+    margin: 10px 0;
+    border: none;
+    border-radius: 2px;
+    background-color: #cccbcb;
+    box-shadow: 0px 0px 5px rgba(61, 59, 59, 0.2);
+    width: 90%;
+    margin-left: 10px;
+}
+.salesBox label {
+    margin-left: 7px;
+}
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button button {
+    background-color: #585858;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+#button button:hover {
+    background-color: #bdb8b8;
+    /* color: black; */
+}
+#button button:active {
+transform: scale(0.9);
+transition: all 0.3s ease-out;
+}
+#orderedPizza  {
+    list-style-type: none;
+}
+#orderedPizza li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -15px;
+    display: none;
+    /* margin-bottom: 0px; */
+    
+}
+#pepPrize {
+margin-left: 110px;
+color: red;
+}
+/* .changeShape {
+    margin-top: 30px;
+} */
+.selected {
+    /* text-decoration: none; */
+    /* display: inline; */
+    /* color: pink; */
+    width: 100%;
+}
+
+/* .order {
+    display: none;
+
+} */
+#minOrderPrize2 {
+    margin-left: 145px;
+}
+#cart2 {
+    margin-left: 70px;
+    font-size: 120px;
+}
+#cart3 {
+    margin-left: 70px;
+    font-size: 120px;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizzaOrdering.css">
+    <title>PIZZA ORDERING</title>
+    <script src="https://kit.fontawesome.com/afdc4e959a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="createBar">    </div>
+
+
+    <div>  
+        <i class="fa-solid fa-chevron-left" style="color: #645a16;" id="backFromOrders"></i>  <aside id="litPizzaHeading">LIT<i class="fa-solid fa-pizza-slice fa-beat" style="color: white;"></i>PIZZA</aside>
+        <aside id="logIn">LOG IN </aside>
+        <aside id="logInFont"><i class="fa-solid fa-user-plus" style="color: red;"></i></aside>
+        <aside class="orderFeatures">PICKUP/CURBSIDE</aside>
+        <aside class="orderFeatures">ORDER DELIVERY</aside>
+    </div>
+    <aside id="lining"></aside>
+    <div id="image1Container">
+        <img src="deli.jpg" alt="Pizza for HomePage " id="imageForPizza">
+        <h1>EATING WELL<br>NEVER TASTED SO <br>GOOD</h1>
+        <p>Choose your healthy with millions of delicious<br>possibilities made from simple whole ingredients</p>
+        <button id="orderNow">ORDER NOW</button>
+    </div>
+    <div id="loginDetails1"> 
+        <h2>Login</h2>
+        <i class="fa-solid fa-xmark" style="color: #aeb0b2;" id="cancelLogin"></i>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" required="" id="user">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required="" id="pass">
+                <label> Password</label>
+            </div>
+            <a >
+                <spn></spn>
+                <spn></spn>
+                <spn></spn>
+                <spn></spn>
+              <aside id="submits">Submit</aside>  
+            </a>
+        </form>
+    </div>
+
+    
+    <aside id="orderPizza">
+       <h1 id="pizza">Pizza</h1>
+
+       <div id="salesBoard">
+        
+        <div id="sales">
+            <div id="removeAllOrder">
+           <p>Your Order<i class="fa-solid fa-gear" style="color: #0f0f0f;" id="settingOfOrder"></i></p>
+           <i class="fa-solid fa-cart-shopping" style="color: #d0d1d2;" id="cart"></i>
+           <i class="fa-solid fa-spinner fa-spin-pulse" style="color: #d0d1d2;" id="cart2"></i>
+           <i class="fa-solid fa-motorcycle fa-flip" style="color: #d0d1d2;" id="cart3"></i>
+           
+            <ul id="orderedPizza" class="lists">
+                <li data-name="Pepperoni" class="eat">  Pepperoni <a id="pepPrize">$20</a></li>
+                <li data-name="Margherita" class="eat"> Margherita <a id="pepPrize">$18</a></li>
+                <li data-name="Capricciosa" class="eat"> Capricciosa</li>
+                <li data-name="Italian Pizza" class="eat"> Italian Pizza</li>
+                <li data-name="Veggie Pizza" class="eat"> Veggie Pizza</li>
+                <li data-name="Meat Pizza" class="eat"> Meat Pizza</li>
+                <!-- <button id="calculateTotal" class="eat">Calculate</button> -->
+            </ul>
+
+
+           <p id="emptyCart">Cart is empty. Add products</p>
+           <p id="minOrder">Min. order <a id="minOrderPrize2">$<a id="minOrderPrize"> 0.00</a> </a></p>
+           <p id="delivery"><a id="confirm">Delivery (Set your address)</a> <a id="free">FREE</a></p>
+           <p id="delivery">I have a coupon</p>
+        </div>
+           <div id="createOrder">
+            <h2 id="createOrder2">Create order</h2>
+        </div>
+        </div>
+
+        <div id='salesAddress'>
+         <aside id="back">  <i class="fa-solid fa-chevron-left"  id="back2"></i> Back </aside> 
+         <h1 id="address">Fill In Your Address</h1>
+         <div class="salesBox">
+            <label>Country</label>
+            <input type="text" name="" required="" class="inputSpace" id="input1">
+        </div>
+
+        <div class="salesBox">
+            <label>State</label>
+            <input type="text" name="" required="" class="inputSpace" id="input2">
+        </div>
+
+        <div class="salesBox">
+            <label>City</label>
+            <input type="text" name="" required="" class="inputSpace" id="input3">
+        </div>
+
+        <div class="salesBox">
+            <label>Street</label>
+            <input type="text" name="" required="" class="inputSpace" id="input4">
+        </div>
+           <div id="button">
+              <button id="register">Register</button>
+            </div>
+        </div>
+       </div>
+
+
+
+       <div >
+           <div id="orderingSector">
+            <img src="pepperoni.jpg" alt="Pizza for HomePage " > <br>
+            <h1 id="Pepperoni" class="name01">Pepperoni</h1>
+            <p id="pepperoniText">cheese, pepperoni</p>
+            <p id="pepperoniPrize">$20.00</p>
+            <div id="pepperoniOrderNow">
+                <h2 id="orderNow2" class="order"  data-price="20.00">ADD TO CART</h2>
+            </div>
+
+           </div>
+
+           <div id="orderingSector">
+            <img src="marga.jpg" alt="Pizza for HomePage " > <br>
+            <h1 id="Pepperoni" class="name">Margherita</h1>
+            <p id="margaText">cheese</p>
+            <p id="margaPrize">$18.00</p>
+            <div id="pepperoniOrderNow">
+                <h2 id="orderNow2" class="order"  data-price="18.00">ADD TO CART</h2>
+            </div>
+           </div>
+
+           <div id="orderingSector">
+            <img src="capri2.jpg" alt="Pizza for HomePage " > <br>
+            <h1 id="Pepperoni" class="name">Capricciosa</h1>
+            <p id="capriText">cheese, ham, mushrooms</p>
+            <p id="capriPrize">$22.00</p>
+            <div id="pepperoniOrderNow">
+                <h2 id="orderNow2" class="order"  data-price="22.00">ADD TO CART</h2>
+            </div>
+           </div>
+
+           <div id="orderingSector">
+            <img src="fine.jpg" alt="Pizza for HomePage " > <br>
+            <h1 id="italian" class="name">Italian Pizza</h1>
+            <p id="italianText">cheese, floor</p>
+            <p id="italianPrize">$30.00</p>
+            <div id="pepperoniOrderNow">
+                <h2 id="orderNow2"  class="order"  data-price="30.00">ADD TO CART</h2>
+            </div>
+           </div>
+
+           <div id="orderingSector">
+            <img src="veg.jpg" alt="Pizza for HomePage " > <br>
+            <h1 id="italian" class="name">Veggie Pizza</h1>
+            <p id="vegText">cheese, vegetable</p>
+            <p id="italianPrize">$22.00</p>
+            <div id="pepperoniOrderNow">
+                <h2 id="orderNow2" class="order"  data-price="22.00">ADD TO CART</h2>
+            </div>
+           </div>
+
+           <div id="orderingSector">
+            <img src="meat.jpg" alt="Pizza for HomePage " > <br>
+            <h1 id="italian" class="name">Meat Pizza</h1>
+            <p id="vegText">cheese, meat</p>
+            <p id="italianPrize">$27.00</p>
+            <div id="pepperoniOrderNow">
+                <h2 id="orderNow2" class="order"  data-price="27.00">ADD TO CART</h2>
+            </div>
+           </div>
+       </div>
+    </aside>
+    <script src="pizzaOrdering.js"></script>
+</body>
+</html>
